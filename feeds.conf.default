@@ -23,3 +23,6 @@ src-git lienol https://github.com/Lienol/openwrt-package
 
 src-git helloworld https://github.com/fw876/helloworld
 #这是ssrp插件的最新库地址，只是库名字叫helloworld，包名字其实还是ssrplus这个比，安装好后是界面是shadowsocksR plus + 这个比，千变万化我是你爸...      
+
+src-git kenzo https://github.com/kenzok8/openwrt-packages
+src-git small https://github.com/kenzok8/small
