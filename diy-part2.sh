@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-# sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 # 一、云编译自定义默认主题：修改[diy-part2.sh]文件
 # 删除原主题：
 # rm -rf package/lean/luci-theme-argon
