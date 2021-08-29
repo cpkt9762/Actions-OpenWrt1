@@ -28,3 +28,9 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 
 # 修改某一文件格式：
 # sed -i 's/更改前的信息/更改后的信息/g' ./要修改的文件的目录（可以用本地查看）
+
+# 修改主机名字，把OpenWrt-CE修改你喜欢的就行（不能纯数字或者使用中文）
+sed -i '/uci commit system/i\uci set system.@system[0].hostname='OpenWrt-Sol'' package/lean/default-settings/files/zzz-default-settings
+
+# 修改 Edge 为默认主题,可根据你喜欢的修改成其他的（不选择那些会自动改变为默认主题的主题才有效果）
+sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' feeds/luci/collections/luci/Makefile
