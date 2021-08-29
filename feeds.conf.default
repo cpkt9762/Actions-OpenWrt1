@@ -26,3 +26,6 @@ src-git helloworld https://github.com/fw876/helloworld
 
 src-git kenzo https://github.com/kenzok8/openwrt-packages
 src-git small https://github.com/kenzok8/small
+
+#OpenAppFilter基于数据流深度识别技术，可以实现游戏、视频、直播等app过滤和审计。
+src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git
