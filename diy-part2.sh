@@ -38,3 +38,6 @@ sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' feeds/luci/collections/luci/Ma
 # 修改版本号-webui
 modelmark=R`TZ=UTC-8 date +%Y-%m-%d -d +"0"days`' by Check'
 sed -i "s/DISTRIB_REVISION='R[0-9]*\.[0-9]*\.[0-9]*\.[0-9]*/DISTRIB_REVISION='$modelmark/g" ./package/lean/default-settings/files/zzz-default-settings
+
+# Add PushBot全能推送 微信推送改版
+git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
