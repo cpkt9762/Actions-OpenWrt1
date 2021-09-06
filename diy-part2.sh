@@ -36,8 +36,11 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='OpenWrt-R4s'' p
 sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' feeds/luci/collections/luci/Makefile 
 
 # 修改版本号-webui
-modelmark=R`TZ=UTC-8 date +"%Y-%m-%d %H:%M:%S" -d +"0"days`' by Check'
-sed -i "s/DISTRIB_REVISION='R[0-9]*.[0-9]*.[0-9]*.[0-9]*/DISTRIB_REVISION='$modelmark/g" ./package/lean/default-settings/files/zzz-default-settings
+modelmark=R`TZ=UTC-8 date +"%Y-%m-%d-%H:%M:%S" -d +"0"days`'byCheck'
+sed -i "s/DISTRIB_REVISION='R[0-9]*.[0-9]*.[0-9]*.[0-9]*/DISTRIB_REVISION='$modelmark/g" package/lean/default-settings/files/zzz-default-settings
 
 # Add PushBot全能推送 微信推送改版
-git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
+#git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
+
+# Add ServerChan 
+# git clone https://github.com/tty228/luci-app-serverchan.git package/luci-app-serverchan
