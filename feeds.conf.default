@@ -35,3 +35,6 @@ src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git
 
 # Add ServerChan 
 src-git serverchan https://github.com/tty228/luci-app-serverchan.git
+
+#京东签到插件
+src-git dailybonus https://github.com/jerrykuku/luci-app-jd-dailybonus.git  
