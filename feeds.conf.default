@@ -7,8 +7,10 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-git oldpackages http://git.openwrt.org/packages.git
 #src-link custom /usr/src/openwrt/custom-feed
 
-#在拉取的op分叉主体的源码的feeds.conf.default文件(lede目录下即可找到)中添加：  
+#在拉取的op分叉主体的源码的feeds.conf.default文件(lede目录下即可找到)中添加：
 
+#大灰狼的专用软件包添加易有云文件管理器
+src-git openwrt_package https://github.com/279437541/openwrt-package.git
 
 src-git passwall https://github.com/xiaorouji/openwrt-passwall   
 #这是passwall插件的最新库地址，库名、包名、菜单名目前统一，之前菜单名是 科学上网、...还有什么名字瞎几把改的我忘了...      
@@ -30,11 +32,19 @@ src-git small https://github.com/kenzok8/small
 #OpenAppFilter基于数据流深度识别技术，可以实现游戏、视频、直播等app过滤和审计。
 src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git 
 
-# Add PushBot全能推送 微信推送改版
+#Add PushBot全能推送 微信推送改版
 #src-git pushbot https://github.com/zzsj0928/luci-app-pushbot.git
 
-# Add ServerChan 
+#Add ServerChan 
 src-git serverchan https://github.com/tty228/luci-app-serverchan.git
 
 #京东签到插件
-src-git dailybonus https://github.com/jerrykuku/luci-app-jd-dailybonus.git  
+src-git dailybonus https://github.com/jerrykuku/luci-app-jd-dailybonus.git 
+
+
+
+#添加阿里云盘WebDAV
+src-git aliyundrivewebdav https://github.com/messense/aliyundrive-webdav.git
+
+#添加网速测试
+src-git netspeedtest  https://github.com/sirpdboy/netspeedtest.git
