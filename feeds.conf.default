@@ -10,7 +10,7 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #在拉取的op分叉主体的源码的feeds.conf.default文件(lede目录下即可找到)中添加：
 
 #大灰狼的专用软件包添加易有云文件管理器
-src-git openwrt_package https://github.com/279437541/openwrt-package.git
+#src-git openwrt_package https://github.com/279437541/openwrt-package.git
 
 src-git passwall https://github.com/xiaorouji/openwrt-passwall   
 #这是passwall插件的最新库地址，库名、包名、菜单名目前统一，之前菜单名是 科学上网、...还有什么名字瞎几把改的我忘了...      
